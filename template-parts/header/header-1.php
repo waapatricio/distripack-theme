@@ -23,13 +23,7 @@
 						<?php endif; ?>
 						<div id="_desktop_logo_">
 							teste
-							<?php if ( is_front_page() && ! is_paged() ) : ?>
-            					<h1 class="<?php echo esc_attr( $header_class ); ?>"><?php echo esc_html( $site_title ); ?></h1>
-        					<?php elseif ( is_front_page() || is_home() ) : ?>
-            					<h1 class="<?php echo esc_attr( $header_class ); ?>"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo esc_html( $site_title ); ?></a></h1>
-        					<?php else : ?>
-            					<p class="<?php echo esc_attr( $header_class ); ?>"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo esc_html( $site_title ); ?></a></p>
-        					<?php endif; ?>
+							
 						</div>
 					</div>
 					<div class="col col-xl-7 col-lg-6 text-center">
