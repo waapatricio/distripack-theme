@@ -1,8 +1,8 @@
 <?php
-	$header_main_text = grano_get_option('header_main_text', 'dark');
+	$header_main_text = grano_get_option('header_main_text', 'light');
 	extract( $args );
 ?>
-<div class="desktop-header header4 d-none d-lg-block">	
+<div class="desktop-header header3 d-none d-lg-block">	
 	<?php grano_promo_block(); ?>
 	<?php grano_header_topbar(); ?>
 	<div class="main-header text-<?php echo esc_attr($header_main_text); ?>">
@@ -32,11 +32,6 @@
 		<div class="top-menu menu-background <?php echo grano_header_sticky(); ?>">
 			<div class="container">
 				<div class="row">
-					<div class="col col-ver ">
-						<div class="vertical-menu">
-							<?php grano_vertical_menu(); ?>
-						</div>
-					</div>
 					<div class="col col-hoz ">
 						<div class="main-menu">
 							<div id="_desktop_menu_">
